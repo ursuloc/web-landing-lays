@@ -1,0 +1,534 @@
+:root {
+  --primary-color: #182327;
+  --secondary-color: #FFD36A;
+  --third-color: #80E2FF;
+  --tex-center: 95%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  color: var(--primary-color);
+}
+
+.header__nav {
+  width: 100%;
+}
+
+.header__column {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.625rem;
+}
+
+.header__column img {
+  width: 32px;
+  height: 32px;
+}
+
+.button__header {
+  background-color: transparent;
+  border: none;
+}
+
+.button__header svg {
+  cursor: pointer;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  display: none;
+
+}
+
+.active {
+  display: flex;
+}
+
+.nav__cta {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: center;
+  order: -200;
+}
+
+.nav__cta a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0.3125rem 0;
+}
+
+.nav__buttons {
+  order: -100;
+  display: flex;
+  gap: 0.5em;
+}
+
+.nav__buttons a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__buttons button {
+  border: none;
+  padding: 0.5em 0.7em;
+  border-radius: 0.25rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.icon__circle {
+  width: 2rem;
+  height: 2rem;
+}
+
+.nav__search {
+  order: 100;
+  padding: 0.625rem;
+  border: 1px solid #5D696D;
+  border-radius: 0.3125rem;
+  background-color: #fff;
+  margin-bottom: 0.625rem;
+}
+
+.search__form input {
+  border: none;
+}
+
+.search__form input:focus {
+  outline: none;
+}
+
+.principal {
+  background: linear-gradient(180deg, #02B5EA 0%, rgba(2, 181, 234, 0.15) 100%)
+}
+
+.principal__img {
+  width: 100%;
+  text-align: center;
+  background-image: url(../assets/images/salt-union.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.salt__img {
+  position: relative;
+  top: 1.875rem;
+  left: 0;
+}
+
+.principal__text {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: var(--primary-color);
+}
+
+.principal__text h2 {
+  font-size: 46px;
+  letter-spacing: 0.0313rem;
+}
+
+.principal__text p {
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+.reusable {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 1.1em 1.6em;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+.secondary {
+  margin: 1em;
+  /* display: grid; */
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.secondary__title {
+  display: flex;
+  position: relative;
+  color: var(--primary-color);
+  font-size: 1.1375rem;
+}
+
+.secondary__title img {
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+.secondary__img {
+  background-image: url(../assets/images/blt-union.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.3125rem;
+  background-color: #FFE9F4;
+  position: relative;
+
+}
+
+.secondary__img img {
+  position: relative;
+  bottom: 1rem;
+  text-align: center;
+
+}
+
+.secondary__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: var(--primary-color);
+}
+
+.secondary__text h4 {
+  font-size: 1.375rem;
+}
+
+.secondary__text h5 {
+  font-size: 0.8125rem;
+  color: #5D696D;
+}
+
+.secondary__text span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.secondary__text p {
+  color: #5D696D;
+  font-size: 0.9375rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.0313rem;
+}
+
+.text__buttons a {
+  margin: 0 2rem;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.articles {
+  margin: 2em 1em;
+}
+
+.articles__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2em;
+}
+
+.articles__text h2 {
+  color: var(--primary-color);
+}
+
+.articles__text h2 {
+  font-size: 1.3rem;
+  color: #182327;
+}
+
+.articles__text p {
+  color: #5D696D;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  gap: 5em;
+}
+
+.item__image {
+  background-image: url(../assets/images/yogurt-union.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.3125rem;
+  /* background-color: #E5F2C0; */
+  position: relative;
+}
+
+
+.item__image img {
+  position: relative;
+  bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.item__image-2 {
+  background-image: url(../assets/images/wavy-union.svg);
+}
+
+.item__image-3 {
+  background-image: url(../assets/images/classic-union.svg);
+}
+
+.item__image-4 {
+  background-image: url(../assets/images/cheddar-union.png);
+}
+
+.item__image-5 {
+  background-image: url(../assets/images/salt-union2.svg);
+}
+
+.item__image-6 {
+  background-image: url(../assets/images/sour-union.svg);
+}
+
+.item__image svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+
+.item__image svg:hover {
+  cursor: pointer;
+}
+
+.item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.item__text span {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+.item__text p {
+  color: #5D696D;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.articles div:last-child {
+  display: block;
+  margin: 1.25rem 0;
+  text-align: center;
+}
+
+.populars {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  margin: 1em;
+}
+
+.populars h3 {
+  color: var(--primary-color);
+  font-size: 1.625rem;
+}
+
+.crips__image {
+  width: 100%;
+  text-align: center;
+  background-image: url(../assets/images/salt-union2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.crips__text {
+  color: var(--primary-color);
+  margin-top: 2em;
+}
+
+.crips__text {
+  font-size: 1.25rem;
+}
+
+.text__play {
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.text__play a {
+  text-decoration: none;
+  color: #5D696D;
+  font-size: 0.875rem;
+}
+
+.opinion {
+  background-color: #80E2FF;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.space {
+  margin-bottom: 2em;
+}
+
+.opinion__image {
+  width: 100%;
+  text-align: center;
+  background-image: url(../assets/images/person-union.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.opinion__text {
+  margin: 1em;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.opinion__text h4 {
+  font-size: 1.3rem;
+}
+
+.opinion__text p {
+  line-height: 1.5;
+  font-size: 0.9375rem;
+  letter-spacing: 0.0313rem;
+}
+
+.opinion__date {
+  color: var(--primary-color);
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.opinion__date p {
+  font-size: 1.3125rem;
+  font-weight: bold;
+}
+
+.opinion__date p:last-of-type {
+  font-size: 1rem;
+  letter-spacing: 0.0313rem;
+  font-weight: normal;
+}
+
+.opinion__arrow {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 2em;
+}
+
+.opinion__arrow:hover {
+  cursor: pointer;
+}
+
+.find {
+  background-color: #FFD36A;
+  background-image: url(../assets/images/find-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.find__text {
+  display: flex;
+  flex-direction: column;
+  margin: .5em;
+  align-items: center;
+  text-align: center;
+  gap: 1.5em;
+  color: var(--primary-color);
+}
+
+.find__text h3 {
+  margin-top: 2em;
+  font-size: 1.625rem;
+}
+
+.find__text p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.0313rem;
+}
+
+.find__text div {
+  margin-bottom: 1.5em;
+}
+
+.footer {
+  background-color: #FFF7E3;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+
+.footer__image {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  gap: 2em;
+}
+
+.footer__nav img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer__cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.footer__cta a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.0625rem;
+}
+
+.social-networks {
+  margin: 0 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  color: #182327;
+}
+
+.social-networks-icons {
+  display: flex;
+  gap: 2em;
+}
+
+.footer p {
+  margin: 2em 1em;
+  font-size: 0.875rem;
+  letter-spacing: 1.5;
+  color: #182327;
+}
