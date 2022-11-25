@@ -1,16 +1,16 @@
 :root {
   --primary-color: #182327;
   --secondary-color: #FFD36A;
-  --third-color: #80E2FF;
   --tex-center: 95%;
+  --third-color: #80E2FF;
 }
 
 .header {
-  width: 100%;
+  color: var(--primary-color);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  color: var(--primary-color);
+  width: 100%;
 }
 
 .header__nav {
@@ -24,8 +24,8 @@
 }
 
 .header__column img {
-  width: 32px;
   height: 32px;
+  width: 32px;
 }
 
 .button__header {
@@ -38,14 +38,13 @@
 }
 
 .header__content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   align-items: center;
-  justify-content: center;
-  gap: 0.5em;
+  display: flex;
   display: none;
-
+  flex-direction: column;
+  gap: 0.5em;
+  justify-content: center;
+  width: 100%;
 }
 
 .active {
@@ -53,51 +52,51 @@
 }
 
 .nav__cta {
+  align-items: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-end;
-  align-items: center;
   order: -200;
 }
 
 .nav__cta a {
-  text-decoration: none;
   color: inherit;
   margin: 0.3125rem 0;
+  text-decoration: none;
 }
 
 .nav__buttons {
-  order: -100;
   display: flex;
   gap: 0.5em;
+  order: -100;
 }
 
 .nav__buttons a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .nav__buttons button {
-  border: none;
-  padding: 0.5em 0.7em;
-  border-radius: 0.25rem;
   background-color: var(--primary-color);
+    border: none;
+  border-radius: 0.25rem;
   color: #fff;
   cursor: pointer;
+  padding: 0.5em 0.7em;
 }
 
 .icon__circle {
-  width: 2rem;
   height: 2rem;
+  width: 2rem;
 }
 
 .nav__search {
-  order: 100;
-  padding: 0.625rem;
-  border: 1px solid #5D696D;
-  border-radius: 0.3125rem;
   background-color: #fff;
+  border: 1px solid #5D696D;
+    border-radius: 0.3125rem;
   margin-bottom: 0.625rem;
+  order: 100;
+    padding: 0.625rem;
 }
 
 .search__form input {
@@ -113,26 +112,26 @@
 }
 
 .principal__img {
-  width: 100%;
-  text-align: center;
   background-image: url(../assets/images/salt-union.svg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
+  text-align: center;
+    width: 100%;
 }
 
 .salt__img {
+  left: 0;
   position: relative;
   top: 1.875rem;
-  left: 0;
 }
 
 .principal__text {
-  margin: 1em;
+  color: var(--primary-color);
   display: flex;
   flex-direction: column;
   gap: 1em;
-  color: var(--primary-color);
+  margin: 1em;
 }
 
 .principal__text h2 {
@@ -141,34 +140,36 @@
 }
 
 .principal__text p {
-  line-height: 1.5;
   font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 .reusable {
   background-color: var(--primary-color);
   border: none;
-  padding: 1.1em 1.6em;
   border-radius: 8px;
   color: #fff;
+  cursor: pointer;
   font-weight: bold;
   margin-bottom: 2em;
-  cursor: pointer;
+  padding: 1.1em 1.6em;
 }
 
 .secondary {
-  margin: 1em;
-  /* display: grid; */
   display: flex;
+  display: grid;
   flex-direction: column;
   gap: 2em;
+  margin: 1em;
+  
+    /*  */
 }
 
 .secondary__title {
-  display: flex;
-  position: relative;
   color: var(--primary-color);
+  display: flex;
   font-size: 1.1375rem;
+  position: relative;
 }
 
 .secondary__title img {
@@ -178,27 +179,25 @@
 }
 
 .secondary__img {
-  background-image: url(../assets/images/blt-union.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 0.3125rem;
   background-color: #FFE9F4;
+  background-image: url(../assets/images/blt-union.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.3125rem;
   position: relative;
-
 }
 
 .secondary__img img {
-  position: relative;
   bottom: 1rem;
+  position: relative;
   text-align: center;
-
 }
 
 .secondary__text {
+  color: var(--primary-color);
   display: flex;
   flex-direction: column;
   gap: 1em;
-  color: var(--primary-color);
 }
 
 .secondary__text h4 {
@@ -206,8 +205,8 @@
 }
 
 .secondary__text h5 {
-  font-size: 0.8125rem;
   color: #5D696D;
+  font-size: 0.8125rem;
 }
 
 .secondary__text span {
@@ -218,14 +217,14 @@
 .secondary__text p {
   color: #5D696D;
   font-size: 0.9375rem;
-  line-height: 1.1rem;
   letter-spacing: 0.0313rem;
+  line-height: 1.1rem;
 }
 
 .text__buttons a {
+  color: var(--primary-color);
   margin: 0 2rem;
   text-decoration: none;
-  color: var(--primary-color);
 }
 
 .articles {
@@ -235,8 +234,8 @@
 .articles__text {
   display: flex;
   flex-direction: column;
-  text-align: center;
   gap: 2em;
+  text-align: center;
 }
 
 .articles__text h2 {
@@ -244,8 +243,8 @@
 }
 
 .articles__text h2 {
-  font-size: 1.3rem;
   color: #182327;
+  font-size: 1.3rem;
 }
 
 .articles__text p {
@@ -255,26 +254,27 @@
 .items {
   display: flex;
   flex-direction: column;
-  margin-top: 5em;
   gap: 5em;
+  margin-top: 5em;
 }
 
 .item__image {
+  background-color: #E5F2C0;
   background-image: url(../assets/images/yogurt-union.svg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   border-radius: 0.3125rem;
-  /* background-color: #E5F2C0; */
   position: relative;
+  /*  */
 }
 
 
 .item__image img {
-  position: relative;
   bottom: 2.5rem;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  position: relative;
 }
 
 .item__image-2 {
@@ -298,10 +298,10 @@
 }
 
 .item__image svg {
-  position: absolute;
   bottom: 0;
+    display: block;
+  position: absolute;
   right: 0;
-  display: block;
 }
 
 .item__image svg:hover {
@@ -318,7 +318,6 @@
   color: var(--primary-color);
   font-size: 1rem;
   font-weight: bold;
-
 }
 
 .item__text p {
@@ -346,12 +345,12 @@
 }
 
 .crips__image {
-  width: 100%;
-  text-align: center;
   background-image: url(../assets/images/salt-union2.svg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
+  text-align: center;
+    width: 100%;
 }
 
 .crips__text {
@@ -364,16 +363,16 @@
 }
 
 .text__play {
-  margin-top: 1em;
+  align-items: center;
   display: flex;
   gap: 1em;
-  align-items: center;
+  margin-top: 1em;
 }
 
 .text__play a {
-  text-decoration: none;
   color: #5D696D;
   font-size: 0.875rem;
+  text-decoration: none;
 }
 
 .opinion {
@@ -388,20 +387,20 @@
 }
 
 .opinion__image {
-  width: 100%;
-  text-align: center;
   background-image: url(../assets/images/person-union.png);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
+  text-align: center;
+    width: 100%;
 }
 
 .opinion__text {
-  margin: 1em;
   color: var(--primary-color);
   display: flex;
   flex-direction: column;
   gap: 1em;
+  margin: 1em;
 }
 
 .opinion__text h4 {
@@ -409,17 +408,17 @@
 }
 
 .opinion__text p {
-  line-height: 1.5;
   font-size: 0.9375rem;
   letter-spacing: 0.0313rem;
+  line-height: 1.5;
 }
 
 .opinion__date {
   color: var(--primary-color);
-  margin: 1em;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+  margin: 1em;
 }
 
 .opinion__date p {
@@ -429,8 +428,8 @@
 
 .opinion__date p:last-of-type {
   font-size: 1rem;
-  letter-spacing: 0.0313rem;
   font-weight: normal;
+  letter-spacing: 0.0313rem;
 }
 
 .opinion__arrow {
@@ -452,24 +451,24 @@
 }
 
 .find__text {
+  align-items: center;
+    color: var(--primary-color);
   display: flex;
   flex-direction: column;
-  margin: .5em;
-  align-items: center;
-  text-align: center;
   gap: 1.5em;
-  color: var(--primary-color);
+  margin: .5em;
+  text-align: center;
 }
 
 .find__text h3 {
-  margin-top: 2em;
   font-size: 1.625rem;
+  margin-top: 2em;
 }
 
 .find__text p {
   font-size: 0.875rem;
-  line-height: 1.5;
   letter-spacing: 0.0313rem;
+  line-height: 1.5;
 }
 
 .find__text div {
@@ -485,20 +484,20 @@
 
 
 .footer__image {
-  text-align: center;
   margin-top: 2em;
+  text-align: center;
 }
 
 .footer__nav {
   display: flex;
   flex-direction: column;
-  margin: 0 1em;
   gap: 2em;
+  margin: 0 1em;
 }
 
 .footer__nav img {
-  width: 32px;
   height: 32px;
+  width: 32px;
 }
 
 .footer__cta {
@@ -508,17 +507,17 @@
 }
 
 .footer__cta a {
-  text-decoration: none;
   color: var(--primary-color);
   font-size: 1.0625rem;
+  text-decoration: none;
 }
 
 .social-networks {
-  margin: 0 1em;
+  color: #182327;
   display: flex;
   flex-direction: column;
   gap: 2em;
-  color: #182327;
+  margin: 0 1em;
 }
 
 .social-networks-icons {
@@ -527,8 +526,8 @@
 }
 
 .footer p {
-  margin: 2em 1em;
+  color: #182327;
   font-size: 0.875rem;
   letter-spacing: 1.5;
-  color: #182327;
+  margin: 2em 1em;
 }
