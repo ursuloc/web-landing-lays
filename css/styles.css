@@ -259,7 +259,7 @@
 }
 
 .item__image {
-  background-color: #E5F2C0;
+  /* background-color: #E5F2C0; */
   background-image: url(../assets/images/yogurt-union.svg);
   background-position: center;
   background-repeat: no-repeat;
